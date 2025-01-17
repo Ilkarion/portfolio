@@ -1,0 +1,64 @@
+@import url("/src/components/header/header.css");
+@import url("/src/components/about/about.css");
+@import url("/src/components/projects/projects.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500;600;700&family=Reem+Kufi+Ink&family=Roboto:wght@400;500;700&display=swap');
+:root {
+    box-sizing:          border-box;
+    font-family:         "Reem Kufi Ink", "Roboto", serif;
+    font-size:           13px;
+    background-color:    rgba(34, 34, 34, 1);
+
+    /* header */
+    --bg-header-scrolled:    rgba(112, 121, 225, 0.241);
+    --bg-header-no-scrolled: transparent;
+    --hover-links-bg:        rgb(174, 25, 184);
+
+    /* about section */
+    --yellow-dot: rgba(255, 255, 78, 1);
+    --blue-dot:   rgba(112, 157, 255, 1);
+    --bg-about:   rgba(0, 0, 0, 0.281);
+    --drop-shadow-about: rgba(55, 255, 62, 1);
+
+    /* cards */
+    --card-background: rgba(217, 217, 217, 0.04);
+    --sm-card-bg:      rgba(219, 219, 219, 1);
+
+    /* text */
+    --highlight-text: rgba(216, 170, 55, 1);
+    --default-text:   rgba(219, 219, 219, 1);
+
+    /* margin & padding */
+    --sm-padding:       0.45rem;
+    --md-padding:       1rem;
+    --contact-padding:  1.2rem;
+    --lg-padding:       2rem;
+    --sm-margin:        0.7rem;
+    --md-margin:        3.6rem;
+
+    /* border-colors */
+    --border-link:     rgba(245, 9, 245, 0.25);
+    --links-bg:        rgba(105, 67, 231, 0.396);
+    --contact-border:  rgba(154, 91, 154, 0.56);
+
+    /* img sizes */
+    --logo-man: 5rem
+}
+
+* {
+    /* outline: solid red; */
+    box-sizing: border-box;
+}
+body {
+    height:  100%;
+    margin:  0px;
+    padding: 0px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--default-text);
+    font-size: 2rem;
+    text-align: center;
+}
