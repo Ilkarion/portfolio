@@ -25,7 +25,7 @@ export default function Header() {
             <header className={scrolled ? "scrolled-header" : "no-scrolled-header"}>
                 <div className="logo-links">
                     <img src={StrongManLogo} alt="logo-strong-man" className="logo-stront-man"/>
-                    <a href="none" className="section-links__projects">projects</a>
+                    <a href="#projects-section" className="section-links__projects">projects</a>
                     <a href="none" className="section-links__skills">skills</a>
                 </div>
                 <span className="specialization">Full Stack Developer</span>
