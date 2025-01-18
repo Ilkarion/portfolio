@@ -1,0 +1,54 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.skills__name_section {
+    margin-top: 4rem;
+}
+
+.delete-double-margin {
+    margin-top: 0rem;
+}
+
+.card-skill {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1rem;
+    max-width: 90px;
+    background-color: var(--card-background);
+}
+
+.card-skill__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.card-skill__img > img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-skill__name {
+    text-align: center;
+    color: var(--default-text);
+    margin-top: 1rem;
+}
+
+.skills_section {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+

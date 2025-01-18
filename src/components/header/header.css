@@ -7,7 +7,7 @@ header {
     padding-top:      var(--md-padding);
     padding-bottom:   var(--md-padding);
     max-width:        100%;
-    z-index: 3;
+    z-index:          3;
 }
 
 header,

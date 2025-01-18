@@ -2,7 +2,7 @@
 .about {
     display:          flex;
     justify-content:  space-between;
-    gap:              60px;
+    gap:              4rem;
     width:            100%;
     padding:          4rem 6rem 4rem 6rem;
     margin-top:       10rem;

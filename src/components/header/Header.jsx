@@ -11,14 +11,13 @@ export default function Header() {
           } else {
             setScrolled(false);
           }
-          console.log(window.scrollY)
         };
     
         window.addEventListener('scroll', handleScroll);
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
-      }, []);
+      }, []); 
   
     return(
         <>
@@ -26,7 +25,7 @@ export default function Header() {
                 <div className="logo-links">
                     <img src={StrongManLogo} alt="logo-strong-man" className="logo-stront-man"/>
                     <a href="#projects-section" className="section-links__projects">projects</a>
-                    <a href="none" className="section-links__skills">skills</a>
+                    <a href="#skills-sect" className="section-links__skills">skills</a>
                 </div>
                 <span className="specialization">Full Stack Developer</span>
                 <div className="contacts-data">
