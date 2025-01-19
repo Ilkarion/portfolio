@@ -1,16 +1,20 @@
 header {
-    backdrop-filter: blur(20px);
-    position:         sticky;
+    width:        100%;
+    backdrop-filter:  blur(20px);
+    position:         fixed;
     top:              0;
-    justify-content:  space-between;
     padding:          0rem var(--lg-padding);
     padding-top:      var(--md-padding);
     padding-bottom:   var(--md-padding);
-    max-width:        100%;
-    z-index:          3;
+    z-index:          3;    
 }
 
-header,
+.header-desctop {
+    justify-content:  space-between;
+    width:            100%;
+}
+
+.header-desctop,
 .logo-links {
     display:          flex;
     align-items:      center;
@@ -23,7 +27,7 @@ header,
     transition:       all 0.2s;
     background-color: var(--bg-header-scrolled);
     padding: var(--sm-padding) var(--md-padding);
-  }
+}
 
 .logo-stront-man {
     width:            var(--logo-man);
@@ -48,7 +52,8 @@ header,
 
 .section-links__projects:hover,
 .section-links__skills:hover {
-    background-color: var(--hover-links-bg);
+    color: var(--links-bg);
+    background-color: transparent;
 }
 
 .specialization {
@@ -74,4 +79,110 @@ header,
 
 .d {
     height: 1000px;
+}
+
+/* mobile */
+.header-mobile {
+    flex-direction: column;
+    overflow: hidden;
+    height: 5rem;
+    transition: height 0.1s ease;
+}
+
+.open-header-mobile {
+    height: 23rem;
+}
+
+.mobile-header-menu-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 6rem;
+    position: relative;
+    background-color: var(--bg-header-menu);
+}
+
+.mobile-header-menu-button-scrolled {
+    background-color: var(--bg-header-scrolled-menu);
+}
+
+.mobile-header-menu-button:hover {
+    cursor: pointer;
+}
+
+.visible-part-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.line-bottom,
+.line-mid,
+.line-top {
+    background-color: orange;
+    width: 80%;
+    height: 0.2rem;
+    position: absolute;
+    transition: all 0.2s ease;
+}
+
+.line-bottom {
+    bottom: 1rem;
+}
+
+.line-top {
+    top: 1rem;
+}
+
+/* animation menu */
+.move-line-top {
+    top: 48%;
+    rotate: 135deg;
+}
+.move-line-bottom {
+    bottom: 48%;
+    rotate: 45deg;
+}
+.delete-line-mid {
+    background-color: transparent;
+}
+
+.logo-strong-man-mobile {
+    margin-right: 0px;
+    height: 5rem;
+}
+
+.logo-links-mobile {
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 3.5rem;
+    
+}
+
+.logo-links-mobile > a {
+    background-color: var(--links-bg);
+}
+
+.contacts-data__number-mobile,
+.contacts-data__gmail-mobile {
+    font-size: 1.5rem;
+}
+
+@media(width <= 900px) {
+    .header-desctop { display: none; }
+    .header-mobile { display: flex; }
+}
+
+@media(width > 900px) {
+    .header-desctop { display: flex; }
+    .header-mobile { display: none; }
+}
+
+@media(width <= 900px) {
+    .scrolled-header{
+        padding: var(--md-padding);
+    }
 }

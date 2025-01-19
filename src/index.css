@@ -11,9 +11,11 @@
     background-color:    rgba(34, 34, 34, 1);
 
     /* header */
-    --bg-header-scrolled:    rgba(112, 121, 225, 0.241);
-    --bg-header-no-scrolled: transparent;
-    --hover-links-bg:        rgb(174, 25, 184);
+    --bg-header-scrolled:          rgba(112, 121, 225, 0.241);
+    --bg-header-menu:              rgba(72, 72, 72, 0.353);
+    --bg-header-menu-scrolled-menu:  transparent;
+    --bg-header-no-scrolled:         transparent;
+    --links-bg:              rgb(174, 25, 184);
 
     /* about section */
     --yellow-dot: rgba(255, 255, 78, 1);
@@ -39,7 +41,6 @@
 
     /* border-colors */
     --border-link:     rgba(245, 9, 245, 0.25);
-    --links-bg:        rgba(105, 67, 231, 0.396);
     --contact-border:  rgba(154, 91, 154, 0.56);
 
     /* img sizes */
@@ -54,7 +55,7 @@ body {
     height:  100%;
     margin:  0px;
     padding: 0px;
-    max-width: 2000px;
+    max-width: 2700px;
     margin: auto;
 }
 
@@ -70,4 +71,45 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+}
+
+@media(width >= 320px) {
+    :root { font-size: 10px; }
+}
+
+@media(width >= 420px) {
+    :root { font-size: 11px; }
+}
+
+@media(width >= 620px) {
+    :root { font-size: 12px; }
+}
+
+@media(width >= 800px) {
+    :root { font-size: 13px; }
+}
+
+@media(width >= 1300px) {
+    :root { font-size: 15px; }
+}
+
+@media(width >= 1500px) {
+    :root { font-size: 17px; }
+}
+
+@media(width >= 1750px) {
+    :root { font-size: 19px; }
+}
+
+@media(width >= 1950px) {
+    :root { font-size: 21px; }
+}
+
+
+@media(width >= 2150px) {
+    :root { font-size: 23px; }
+}
+
+@media(width >= 2400px) {
+    :root { font-size: 25px; }
 }
