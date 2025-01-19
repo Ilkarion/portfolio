@@ -1,4 +1,4 @@
-import js_skills from "../../images/skills/js.svg"
+import js_skills from "../../images/skills/JS.svg"
 import ts_skills from "../../images/skills/ts.svg"
 import bootstrap_skills from "../../images/skills/bootstrap.svg"
 import css_skills from "../../images/skills/css.svg"
