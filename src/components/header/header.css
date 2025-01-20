@@ -117,6 +117,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .line-bottom,
@@ -186,3 +187,29 @@ header {
         padding: var(--md-padding);
     }
 }
+
+@media(320px <= width < 1100px) {
+    .logo-stront-man {
+        width: 3.3rem;
+    }
+    .expand-menu-mobile,
+    .close-menu-mobile {
+        height: 4rem;
+        width: 4rem;
+    }
+    .visible-part-mobile {
+        height: 3.5rem;
+    }
+    .header-mobile {
+        height: 3.5rem;
+    }
+    .open-header-mobile {
+        height: 23rem;
+    }
+    .scrolled-header,
+    header {
+        padding: 0.2rem;
+    }
+
+}
+
