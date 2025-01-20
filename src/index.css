@@ -48,7 +48,7 @@
 }
 
 * {
-    /* outline: solid red; */
+    /* outline: solid brown; */
     box-sizing: border-box;
 }
 body {
@@ -74,27 +74,31 @@ h3 {
 }
 
 @media(width >= 320px) {
-    :root { font-size: 10px; }
+    :root { font-size: 13.5px; }
 }
 
 @media(width >= 420px) {
-    :root { font-size: 11px; }
-}
-
-@media(width >= 620px) {
-    :root { font-size: 12px; }
-}
-
-@media(width >= 800px) {
-    :root { font-size: 13px; }
-}
-
-@media(width >= 1300px) {
     :root { font-size: 15px; }
 }
 
-@media(width >= 1500px) {
+@media(width >= 600px) {
+    :root { font-size: 16.5px; }
+}
+
+@media(width >= 800px) {
     :root { font-size: 17px; }
+}
+
+@media(width >= 900px) {
+    :root { font-size: 17px; }
+}
+
+@media(width >= 1300px) {
+    :root { font-size: 18px; }
+}
+
+@media(width >= 1500px) {
+    :root { font-size: 19px; }
 }
 
 @media(width >= 1750px) {

@@ -51,4 +51,14 @@
     flex-wrap: wrap;
 }
 
+@media(width >= 400px) {
+    .card-skill {
+        max-width: 140px;
+    }
+}
 
+@media(width >= 2100px) {
+    .card-skill {
+        max-width: 180px;
+    }
+}
