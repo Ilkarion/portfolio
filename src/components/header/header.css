@@ -53,7 +53,8 @@ header {
 .section-links__projects:hover,
 .section-links__skills:hover {
     color: var(--links-bg);
-    background-color: transparent;
+    background-color: black;
+    color: #D8AA37;
 }
 
 .specialization {

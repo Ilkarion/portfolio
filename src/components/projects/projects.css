@@ -45,8 +45,16 @@
 }
 
 .card-about-describtion > p {
+    font-size: 20px;
     margin-top: 0rem;
     color: var(--default-text);
+    white-space: pre-line;
+}
+@media(width < 830px) {
+    .card-about-describtion > p {
+        max-height: 200px;
+        overflow-y: auto;
+    }
 }
 
 .card-about-technologies {

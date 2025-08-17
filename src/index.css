@@ -15,7 +15,7 @@
     --bg-header-menu:              rgba(72, 72, 72, 0.353);
     --bg-header-menu-scrolled-menu:  transparent;
     --bg-header-no-scrolled:         transparent;
-    --links-bg:              rgb(174, 25, 184);
+    --links-bg:              #181818;
 
     /* about section */
     --yellow-dot: rgba(255, 255, 78, 1);
