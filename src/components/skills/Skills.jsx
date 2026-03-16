@@ -15,6 +15,15 @@ import next_js_skill from "../../images/skills/next_js.png"
 import jira_skills from "../../images/skills/jira.jpeg"
 import CardSkills from "./CardSkills"
 
+import apiImg from "../../images/skills/API.png"
+import postgreSQLImg from "../../images/skills/PostgreSQL.png"
+import zustandImg from "../../images/skills/zustand.png"
+import nodeJSImg from "../../images/skills/nodeJS.png"
+import expressImg from "../../images/skills/express.png"
+import supabaseImg from "../../images/skills/supabase.png"
+import postmanImg from "../../images/skills/postman.png"
+import muiImg from "../../images/skills/mui.png"
+
 
 export default function Skills() {
     const frontend_tech = [
@@ -57,6 +66,21 @@ export default function Skills() {
             img: sass_skills,
             shadowColor: "rgba(205, 103, 153, 1)",
             name: "SASS"
+        },
+        {
+            img: apiImg,
+            shadowColor: "#E58325",
+            name: "API"
+        },
+        {
+            img: zustandImg,
+            shadowColor: "#516E2F",
+            name: "Zustand"
+        },
+        {
+            img: postmanImg,
+            shadowColor: "#FD6C35",
+            name: "Postman"
         }
     ]
     const backend_tech = [
@@ -69,6 +93,26 @@ export default function Skills() {
             img: sql_skill,
             shadowColor: "#E06C21",
             name: "SQL"
+        },
+        {
+            img: postgreSQLImg,
+            shadowColor: "#2B5679",
+            name: "Postgre SQL"
+        },
+        {
+            img: nodeJSImg,
+            shadowColor: "#85BE01",
+            name: "Node.js"
+        },
+        {
+            img: expressImg,
+            shadowColor: "#8a8a01",
+            name: "Express.js"
+        },
+        {
+            img: supabaseImg,
+            shadowColor: "#3ECF8E",
+            name: "Supabase database"
         }
 ]
     const other_tech = [
@@ -97,6 +141,12 @@ export default function Skills() {
             shadowColor: "#0E54D7",
             name: "Jira"
         },
+        {
+            img: muiImg,
+            shadowColor: "#007BF7",
+            name: "Material UI"
+        },
+
     ]
 
     return(

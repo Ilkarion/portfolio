@@ -1,8 +1,7 @@
-import underwatch from "../../images/underwatch.png"
 import masterComponent from "../../images/masterComponent.png"
 import animatedDots from "../../images/animatedDots.png"
-import giggle from "../../images/giggle.png"
-import novaSpere from "../../images/novaSphere.png"
+import cosmicDiary from "../../images/CosmicDiary.png"
+import randomAnim from "../../images/randomAnim.png"
 
 
 export default function Projects() {
@@ -11,35 +10,35 @@ export default function Projects() {
 const projects_library = [
     {
         num: "01",
-        name: "NovaSphere",
-        describtion: `This project is a summary of my previous works. 
-        I designed it myself and made the website fully responsive for different devices. 
-        I connected Supabase and created SQL tables for user data storage. 
-        I added internationalization in 4 languages, light/dark theme switching, and authentication. 
-        I built complex components, forms, pagination, and search with language-aware results. 
-        The idea of the site: a platform where users can share amazing facts and phenomena in three categories — Space, Nature, and Human Inventions. 
-        Before publication, submitted content is reviewed by the author and then approved.`,
+        name: "Diary Cosmic",
+        describtion: `Full‑stack personal diary app with mood tracking, an interactive map of entries, and analytics. 
+        It showcases modern frontend + backend practices, including:
+        + User authentication (signup/login/email verification)
+        + Create and manage diary entries with tags, moods and map locations
+        + Mood statistics and emotional trends visualization
+        + Responsive UI with theme switching and internationalization`,
 
-        technologies: ["Next.js", "HTML", "SCSS", "Figma", "Supabase", "SQL", "JavaScript", "TypeScript", "API"],
-        link_gitHub: "https://github.com/Ilkarion/NovaSphere",
-        link_see_project: "https://nova-sphere-iota.vercel.app/en",
-        img: novaSpere
+        technologies: ["Next.js (React)", "TypeScript", "Zustand ", "Fetch API",
+            "CSS(SCSS)", "HTML", "SQL/PostgreSQL" , "Node.js(Express.js)", "Supabase (database)", "Render (deployment)", "Vercel (deployment)", "i18n (internationalization)"],
+        link_gitHub: "https://github.com/Ilkarion/diary_cosmic",
+        link_see_project: "https://diary-cosmic-liard.vercel.app/",
+        img: cosmicDiary
     },
     {
         num: "02",
-        name: "Underwatch",
-        describtion: `Focused on advanced Tailwind CSS techniques, explored custom CSS tricks, and improved responsive design skills.`,
-        technologies: ["Next.js", "CSS", "TypeScript", "HTML", "Tailwind.css"],
-        link_gitHub: "https://github.com/Ilkarion/underwatch",
-        link_see_project: "https://underwatch.vercel.app/uk",
-        img: underwatch
+        name: "Random Animation",
+        describtion: `Focusing on smooth, visually appealing animations.
+                    The project includes dynamic animated components that can be used in user interfaces to enhance user engagement, such as interactive particle effects and procedural animations.`,
+        technologies: ["Next.js", "CSS", "TypeScript", "HTML", "Tailwind.css", "GSAP(animations)"],
+        link_gitHub: "https://github.com/Ilkarion/random_animation",
+        link_see_project: "https://random-animation-ecru.vercel.app/",
+        img: randomAnim
     },
     {
         num: "03",
         name: "masterComponent",
-        describtion: `Worked in a team with designer, backend developer, PM, and QA using SCRUM methodology.
-        Gained collaboration experience and learned how to use Redux effectively.`,
-        technologies: ["SCSS", "Next.js", "Tailwind.css", "HTML", "Redux"],
+        describtion: `Computer Store. The project focuses on teamwork, modular architecture, and responsive layouts.`,
+        technologies: ["React.js", "Redux", "Material UI", "HTML", "CSS/SCSS", "Git", "Vercel deployment"],
         link_gitHub: "https://github.com/Ilkarion/masterComponent",
         link_see_project: "https://master-component.vercel.app/",
         img: masterComponent
@@ -53,15 +52,6 @@ const projects_library = [
         link_gitHub: "https://github.com/Ilkarion/animated-fon-dots-lines/tree/main",
         link_see_project: "https://ilkarion.github.io/animated-fon-dots-lines/",
         img: animatedDots
-    },
-    {
-        num: "05",
-        name: "Giggle",
-        describtion: "Explored implementation of light/dark themes and website internationalization (i18n). Improved skills in responsive design and TypeScript.",
-        technologies: ["Next.js", "JavaScript", "HTML", "Tailwind.css", "i18n", "TypeScript"],
-        link_gitHub: "https://github.com/Ilkarion/giggle",
-        link_see_project: "https://giggle-three.vercel.app/",
-        img: giggle
     }
 ]
 
