@@ -16,7 +16,7 @@ import jira_skills from "../../images/skills/jira.jpeg"
 import CardSkills from "./CardSkills"
 
 import apiImg from "../../images/skills/API.png"
-import postgreSQLImg from "../../images/skills/PostgreSQL.png"
+import postgreSQLImg from "../../images/skills/postgreSQL.png"
 import zustandImg from "../../images/skills/zustand.png"
 import nodeJSImg from "../../images/skills/nodeJS.png"
 import expressImg from "../../images/skills/express.png"
