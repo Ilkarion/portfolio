@@ -2,6 +2,9 @@ import masterComponent from "../../images/masterComponent.png"
 import animatedDots from "../../images/animatedDots.png"
 import cosmicDiary from "../../images/CosmicDiary.png"
 import randomAnim from "../../images/randomAnim.png"
+import graphQA from "../../images/qa/graphs.png"
+import run_resultsQA from "../../images/qa/run results.png"
+import boardQA from "../../images/qa/board.png"
 
 
 export default function Projects() {
@@ -10,6 +13,33 @@ export default function Projects() {
 const projects_library = [
     {
         num: "01",
+        name: "UI Test Automation: Diary Cosmic",
+        describtion: `Contains automated UI tests for Diary Cosmic, a personal diary web application.
+                      The main goal of this project is to practise and demonstrate UI test automation using Java, Selenium WebDriver, TestNG, Maven and Allure.`,
+
+        technologies: ["Java", "Selenium WebDriver", "TestNG", "Maven", "Allure", "GitHub Actions"],
+        link_gitHub: "https://github.com/Ilkarion/Your-Diary-Auto-testing",
+        img: graphQA
+    },
+    {
+        num: "02",
+        name: "API Testing: Your Diary API (Postman)",
+        describtion: `This project demonstrates manual API testing with Postman test scripts (JavaScript) API testing of a diary application using Postman.
+                      The goal was to verify API functionality, validate responses, test authentication, and identify potential issues in backend validation.`,
+        technologies: ["Postman", "JavaScript", "REST", "JSON", "Swagger UI / OpenAPI", "GitHub"],
+        link_gitHub: "https://github.com/Ilkarion/APITesting_Your_diary",
+        img: run_resultsQA
+    },
+        {
+        num: "03",
+        name: "Manual QA: Allegro Sandbox",
+        describtion: `Created to practice full-cycle software testing on an e-commerce platform. It provided practical experience in test planning, designing 65 test cases using core test design techniques, managing test artifacts in Jira and Xray, building a traceability matrix, and writing professional reports.`,
+        technologies: ["Jira", "Xray", "DevTools", "GitHub"],
+        link_gitHub: "https://github.com/Ilkarion/allegro-sandbox-qa-manual",
+        img: boardQA
+    },
+    {
+        num: "04",
         name: "Diary Cosmic",
         describtion: `Full‑stack personal diary app with mood tracking, an interactive map of entries, and analytics. 
         It showcases modern frontend + backend practices, including:
@@ -25,7 +55,7 @@ const projects_library = [
         img: cosmicDiary
     },
     {
-        num: "02",
+        num: "05",
         name: "Random Animation",
         describtion: `Focusing on smooth, visually appealing animations.
                     The project includes dynamic animated components that can be used in user interfaces to enhance user engagement, such as interactive particle effects and procedural animations.`,
@@ -35,7 +65,7 @@ const projects_library = [
         img: randomAnim
     },
     {
-        num: "03",
+        num: "06",
         name: "masterComponent",
         describtion: `Computer Store. The project focuses on teamwork, modular architecture, and responsive layouts.`,
         technologies: ["React.js", "Redux", "Material UI", "HTML", "CSS/SCSS", "Git", "Vercel deployment"],
@@ -44,7 +74,7 @@ const projects_library = [
         img: masterComponent
     },
     {
-        num: "04",
+        num: "07",
         name: "animatedDots",
         describtion: `Built an animated background using pure JavaScript and Canvas.
         Goal: practice OOP in JavaScript and apply it in a practical project.`,
@@ -81,10 +111,11 @@ const projects_library = [
 
                                             <a href={item.link_gitHub} target="_blank">Link gitHub--&gt;</a>
                                         </div>
-
+ 
                                         <div className="projects__cards__card__image">
-                                            <a href={item.link_see_project} target="_blank"><img src={item.img} alt="underwatch" /></a>
+                                            <a href={item.link_see_project} target="_blank"><img src={item.img} alt="screenshot" /></a>
                                         </div>
+                                        
                                     </div>
                                 )
                     })}

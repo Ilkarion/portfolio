@@ -6,7 +6,7 @@ import figma_skills from "../../images/skills/figma.svg"
 import github_skills from "../../images/skills/github.svg"
 import html_skills from "../../images/skills/html.svg"
 import npm_skills from "../../images/skills/npm.svg"
-import python_skills from "../../images/skills/python.svg"
+// import python_skills from "../../images/skills/python.svg" -- python
 import react_skills from "../../images/skills/react.svg"
 import redux_skills from "../../images/skills/redux.svg"
 import sass_skills from "../../images/skills/sass.svg"
@@ -23,6 +23,19 @@ import expressImg from "../../images/skills/express.png"
 import supabaseImg from "../../images/skills/supabase.png"
 import postmanImg from "../../images/skills/postman.png"
 import muiImg from "../../images/skills/mui.png"
+
+//QA
+import allureQA from "../../images/skills/qa/allure.png"
+import devtoolsQA from "../../images/skills/qa/devtools.png"
+import gh_actionsQA from "../../images/skills/qa/gh-actions.png"
+import javaQA from "../../images/skills/qa/java.svg"
+import jsonQA from "../../images/skills/qa/json.svg"
+import mavenQA from "../../images/skills/qa/maven.png"
+import seleniumQA from "../../images/skills/qa/selenium.svg"
+import swaggerQA from "../../images/skills/qa/swagger.png"
+import testngQA from "../../images/skills/qa/testng.png"
+import xrayQA from "../../images/skills/qa/xray.png"
+
 
 
 export default function Skills() {
@@ -77,18 +90,13 @@ export default function Skills() {
             shadowColor: "#516E2F",
             name: "Zustand"
         },
-        {
-            img: postmanImg,
-            shadowColor: "#FD6C35",
-            name: "Postman"
-        }
     ]
     const backend_tech = [
-        {
-            img: python_skills,
-            shadowColor: "rgba(78, 174, 255, 1)",
-            name: "Python"
-        },
+        // {
+        //     img: python_skills,
+        //     shadowColor: "rgba(78, 174, 255, 1)",
+        //     name: "Python"
+        // },
         {
             img: sql_skill,
             shadowColor: "#E06C21",
@@ -137,11 +145,6 @@ export default function Skills() {
             name: "npm"
         },
         {
-            img: jira_skills,
-            shadowColor: "#0E54D7",
-            name: "Jira"
-        },
-        {
             img: muiImg,
             shadowColor: "#007BF7",
             name: "Material UI"
@@ -149,11 +152,100 @@ export default function Skills() {
 
     ]
 
+    //qa
+    const qa_auto = [
+        {
+            img: javaQA,
+            shadowColor: "#E76F00",
+            name: "Java"
+        },
+        {
+            img: seleniumQA,
+            shadowColor: "#2CB134",
+            name: "Selenium"
+        },
+        {
+            img: testngQA,
+            shadowColor: "#BD110F",
+            name: "TestNG"
+        },
+        {
+            img: allureQA,
+            shadowColor: "#7E8EA5",
+            name: "Allure"
+        },
+        {
+            img: gh_actionsQA,
+            shadowColor: "#1E87FD",
+            name: "GitHub Actions"
+        },
+        {
+            img: mavenQA,
+            shadowColor: "#A61F5D",
+            name: "Maven"
+        },
+    ]
+    const qa_api = [
+        {
+            img: postmanImg,
+            shadowColor: "#FD6C35",
+            name: "Postman"
+        },
+        {
+            img: jsonQA,
+            shadowColor: "#FFD375",
+            name: "JSON"
+        },
+        {
+            img: swaggerQA,
+            shadowColor: "#183748",
+            name: "Swagger"
+        },
+    ]
+    const qa_manual = [
+        {
+            img: xrayQA,
+            shadowColor: "#97DAA4",
+            name: "XRay"
+        },
+        {
+            img: jira_skills,
+            shadowColor: "#0E54D7",
+            name: "Jira"
+        },
+        {
+            img: devtoolsQA,
+            shadowColor: "#F9759D",
+            name: "DevTools"
+        },
+    ]
+
     return(
         <div className="skills" id="skills-sect">
             <h2>SKILLS</h2>
 
-            <h3 className="skills__name_section delete-double-margin">Front-end</h3>
+            <h3 className="skills__name_section delete-double-margin">QA Automation</h3>
+            <div className="skills_section">
+                {qa_auto.map((item, index) => (
+                    <CardSkills Skill={item.img} NameSkill={item.name} ShadowColor={item.shadowColor} key={index}/>
+                ))}
+            </div>
+
+            <h3 className="skills__name_section">QA API</h3>
+            <div className="skills_section">
+                {qa_api.map((item, index) => (
+                    <CardSkills Skill={item.img} NameSkill={item.name} ShadowColor={item.shadowColor} key={index}/>
+                ))}
+            </div>
+
+            <h3 className="skills__name_section">QA manual</h3>
+            <div className="skills_section">
+                {qa_manual.map((item, index) => (
+                    <CardSkills Skill={item.img} NameSkill={item.name} ShadowColor={item.shadowColor} key={index}/>
+                ))}
+            </div>
+
+            <h3 className="skills__name_section">Front-end</h3>
                 <div className="skills_section">
                     {frontend_tech.map((item, index) => (
                         <CardSkills Skill={item.img} NameSkill={item.name} ShadowColor={item.shadowColor} key={index}/>

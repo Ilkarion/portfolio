@@ -3,10 +3,10 @@ import me from "../../images/me.svg"
 
 export default function About() {
 
-    const full_stack = "Yo!   I am a Fullstack Developer with great experience, good knowledge in programming languages and web development."
-    const every_month = "Month by month, I am mastering my skills and developing myself."
-    const my_goal = "My goal is to create new products or update them to give people more flexible, faster, and good-looking products."
-    const student = "Now,  I am a student of WSPA  University (Computer Science). Down below, you can see my projects and skills."
+    const full_stack = "I am a QA Engineer with a background in web development. I know how to do manual testing, test APIs with Postman, and build test automation using Java and Selenium."
+    const every_month = "Month by month, I am learning new skills to become a better tester."
+    const my_goal = "My goal is to make sure applications work well and give users a smooth, high-quality experience."
+    const student = "Right now, I am studying Computer Science at WSPA University. You can check out my projects and skills below!"
 
 
     return (
